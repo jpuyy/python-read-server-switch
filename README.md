@@ -1,4 +1,4 @@
-parser.py
+ansible-read-server.py
 
 Require:
     ansible
