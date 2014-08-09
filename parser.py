@@ -5,9 +5,6 @@
 
 import json
 import subprocess
-import urllib
-import urllib2
-import httplib
 
 subprocess.call("ansible -i hosts all -m setup --tree .",shell=True)
 
@@ -23,7 +20,6 @@ for line in open('hosts', 'r').readlines():
     cpu_num = output['ansible_facts']['ansible_processor_count']
     memory = output['ansible_facts']['ansible_memtotal_mb']
     hostname = output['ansible_facts']['ansible_fqdn']
-    #system_version = output['ansible_facts']['ansible_lsb']['description']
     system_version = output['ansible_facts']['ansible_distribution_version']
     eth = {}
     mac = {}
