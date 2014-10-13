@@ -1,10 +1,10 @@
-ansible-read-server.py
+# File: ansible-read-server.py
 
-Require:
-    ansible
-    python json
-    python subprocess
+## Require:
+- ansible
+- python json
+- python subprocess
 
-python-netsnmp-cisco.py
-Require:
-    python netsnmp
+# File: python-netsnmp-cisco.py
+## Require:
+- python netsnmp
